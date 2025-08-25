@@ -28,7 +28,7 @@ public class User implements UserDetails {
     private String specialty;
     private LocalDateTime createdAt;
 
-    @Transient
+    @Transient //Transient
     private List<SimpleGrantedAuthority> authorities = SIMPLE_ROLES;
     public final static SimpleGrantedAuthority ROLE_USER = new SimpleGrantedAuthority("ROLE_USER");
     public final static SimpleGrantedAuthority ROLE_ADMIN = new SimpleGrantedAuthority("ROLE_ADMIN");
